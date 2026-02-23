@@ -27,7 +27,7 @@ import com.prog7313.microtrips.models.Destination
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun addDestScreen(
+fun AddDestScreen(
     onBack: () -> Unit,
     onSave: (Destination) -> Unit
 ) {
