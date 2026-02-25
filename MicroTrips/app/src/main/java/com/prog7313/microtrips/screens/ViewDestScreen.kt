@@ -64,14 +64,14 @@ fun ViewDestScreen(
                         .clickable { shareDestination(context, g) }
                 ) {
                     Column(modifier = Modifier.padding(16.dp)) {
-                        Text(g.destinationName, style = MaterialTheme.typography.titleMedium)
+                        Text(g.name, style = MaterialTheme.typography.titleMedium)
                         Spacer(Modifier.height(4.dp))
                         Text(
-                            "R${"%.2f".format(g.destinationPrice)}",
+                            "R${"%.2f".format(g.budget)}",
                             style = MaterialTheme.typography.bodyLarge
                         )
                         Spacer(Modifier.height(4.dp))
-                        Text(g.destinationDescription, style = MaterialTheme.typography.bodyLarge)
+                        Text(g.shortDescription, style = MaterialTheme.typography.bodyLarge)
                         Spacer(Modifier.height(4.dp))
                         Text("Tap to share", style = MaterialTheme.typography.labelSmall)
                     }

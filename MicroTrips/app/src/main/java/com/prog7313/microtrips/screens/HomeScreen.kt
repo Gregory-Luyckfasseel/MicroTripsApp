@@ -34,7 +34,7 @@ fun HomeScreen(
     ) {
         Text("Micro Trips Home", style = MaterialTheme.typography.headlineMedium)
         Spacer(Modifier.height(16.dp))
-        AssetImage("code.jpg")
+        //AssetImage("code.jpg")
         Spacer(Modifier.height(20.dp))
 
         Button(

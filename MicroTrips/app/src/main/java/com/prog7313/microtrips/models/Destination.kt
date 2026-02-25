@@ -3,7 +3,7 @@ package com.prog7313.microtrips.models
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Destination (
+data class Destination(
     val id: Long,
     val name: String,
     val province: String,
@@ -18,6 +18,7 @@ data class Destination (
     val tags: List<String>,
 )
 
+@Serializable
 data class Budget(
     val transport: Long,
     val food: Long,
@@ -25,6 +26,7 @@ data class Budget(
     val misc: Long,
 )
 
+@Serializable
 data class Location(
     val area: String,
     val mapsQuery: String,
