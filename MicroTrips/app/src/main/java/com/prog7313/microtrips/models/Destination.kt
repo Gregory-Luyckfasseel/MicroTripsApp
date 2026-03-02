@@ -23,8 +23,11 @@ data class Budget(
     val transport: Long,
     val food: Long,
     val entry: Long,
-    val misc: Long,
-)
+    val misc: Long
+) {
+    val total: Long
+        get() = transport + food + entry + misc
+}
 
 @Serializable
 data class Location(
